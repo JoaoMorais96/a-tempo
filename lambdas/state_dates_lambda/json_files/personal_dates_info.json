@@ -1,0 +1,30 @@
+{
+    "IUC": {
+        "general_info": {
+            "resumo": "Pagar o Imposto Unico de Circulacao",
+            "onde": "https://iva.portaldasfinancas.gov.pt/driva/portal/entregar-declaracao#!"
+        },
+        "user_info": [
+            {
+                "username": "joaoM",
+                "date": "2024-08-20"
+            },
+            {
+                "nome": "marianaD",
+                "date": "2024-08-20"
+            }
+        ]
+    },
+    "IMI": {
+        "general_info": {
+            "resumo": "Pagar o IMI",
+            "onde": "https://iva.portaldasfinancas.gov.pt/driva/portal/entregar-declaracao#!"
+        },
+        "user_info": [
+            {
+                "username": "joaoM",
+                "date": "2024-08-20"
+            }
+        ]
+    }
+}

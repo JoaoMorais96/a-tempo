@@ -1,0 +1,28 @@
+{
+    "2024-08-20": [
+        {
+            "nome": "3ro Trimestre IVA",
+            "resumo": "Fazer a declaracao trimestral do IVA para o 3ro trimestre",
+            "onde": "https://iva.portaldasfinancas.gov.pt/driva/portal/entregar-declaracao#!"
+        },
+        {
+            "nome": "5ro Trimestre IVA",
+            "resumo": "Fazer a declaracao trimestral do IVA para o 5ro trimestre",
+            "onde": "https://iva.portaldasfinancas.gov.pt/driva/portal/entregar-declaracao#!"
+        }
+    ],
+    "2024-08-27": [
+        {
+            "nome": "4ro Trimestre IVA",
+            "resumo": "Fazer a declaracao trimestral do IVA para o 4ro trimestre",
+            "onde": "https://iva.portaldasfinancas.gov.pt/driva/portal/entregar-declaracao#!"
+        }
+    ],
+    "2024-08-23": [
+        {
+            "nome": "IUC",
+            "resumo": "Pagar o Imposto Unico de Circula\u00e7ao",
+            "onde": "https://iva.portaldasfinancas.gov.pt/driva/portal/entregar-declaracao#!"
+        }
+    ]
+}

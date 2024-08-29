@@ -1,0 +1,38 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: "AWS::Serverless-2016-10-31"
+
+Resources:
+  CheckDatesFunction:
+    Type: "AWS::Serverless::Function"
+    Properties:
+      Handler: check_dates_function.check_dates
+      Runtime: python3.9
+      CodeUri: checkprojectbalances-lambda/
+      Timeout: 200
+      Environment:
+        Variables:
+          VET_NODE_URL: https://sync-mainnet.vechain.org/
+      Policies:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: SES
+            Effect: Allow
+            Action:
+              - ses:SendEmail
+              - ses:SendRawEmail
+            Resource:
+              - "arn:aws:ses:eu-central-1:021282783180:identity/info@devsaynode.ch"
+              - "arn:aws:ses:eu-central-1:021282783180:identity/devsaynode.ch"
+              - "arn:aws:ses:eu-central-1:021282783180:configuration-set/Chainstaff"
+            Condition:
+              StringEquals:
+                ses:FromAddress: "info@devsaynode.ch"
+          - Sid: SESquota
+            Effect: Allow
+            Action: ses:GetSendQuota
+            Resource: "*"
+      Events:
+        DailySchedule:
+          Type: Schedule
+          Properties:
+            Schedule: "cron(00 14 * * ? *)" # Every day at 16 UTC
