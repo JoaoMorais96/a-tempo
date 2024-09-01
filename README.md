@@ -1,0 +1,4 @@
+- See how EleBean works, deploy the django app and test it
+- Launch the lambdas
+- Find a way for only the app to be able to call the lambdas
+- Get front end and link it to the django and lambdas
